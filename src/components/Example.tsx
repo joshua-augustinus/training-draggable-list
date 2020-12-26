@@ -17,9 +17,12 @@ const Example = () => {
             <TouchableOpacity
                 style={{
                     height: 100,
-                    backgroundColor: isActive ? "blue" : item.backgroundColor,
+                    backgroundColor: item.backgroundColor,
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
+                    transform: [{ scale: isActive ? 1.2 : 1 }],
+                    margin: 4,
+                    borderRadius: 5
                 }}
                 onLongPress={drag}
             >
@@ -35,6 +38,8 @@ const Example = () => {
             </TouchableOpacity>
         );
     };
+
+
 
     return (
         <View style={{ flex: 1 }}>
