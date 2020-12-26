@@ -3,6 +3,7 @@ import { Button, Text, TextInput, TouchableOpacity, View, BackHandler } from 're
 import { SafeAreaView, StackActions } from 'react-navigation';
 import { DrawerActions, NavigationDrawerProp } from 'react-navigation-drawer';
 import { FeatureButton } from '@src/components/FeatureButton';
+import { Example } from '@src/components/Example';
 
 /**
  * https://reactnavigation.org/docs/4.x/typescript
@@ -44,8 +45,8 @@ const MasterScreen = (props: Props) => {
                     <Text>Menu</Text>
                 </TouchableOpacity>
             </View>
-            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <FeatureButton />
+            <View style={{ flex: 1, alignItems: 'stretch', justifyContent: 'center' }}>
+                <Example />
             </View>
         </SafeAreaView>
 
